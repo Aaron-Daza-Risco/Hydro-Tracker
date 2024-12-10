@@ -1,0 +1,78 @@
+/* Reporte.css */
+
+.reporte-container {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6fb1fc, #4364f7);
+  padding: 2rem;
+}
+
+.reporte-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 4rem;
+  border-radius: 0;
+  box-shadow: none;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reporte-card h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.reporte-card p {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-bottom: 1rem;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.reporte-card strong {
+  color: #2c3e50;
+  margin-right: 0.5rem;
+}
+
+.boton-volver {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: transparent;
+  color: #4364f7;
+  border: 2px solid #4364f7;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.boton-volver:hover {
+  background: rgba(67, 100, 247, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(67, 100, 247, 0.2);
+}
+
+.boton-volver:active {
+  transform: translateY(0);
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1200px) {
+  .reporte-card {
+    padding: 6rem;
+  }
+
+  .reporte-card h2 {
+    font-size: 3rem;
+  }
+
+  .reporte-card p {
+    font-size: 1.4rem;
+  }
+}

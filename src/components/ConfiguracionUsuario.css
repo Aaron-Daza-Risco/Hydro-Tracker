@@ -1,0 +1,159 @@
+.config-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6fb1fc, #4364f7);
+  padding: 2rem;
+}
+
+.config-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.config-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.welcome-text {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.config-subtitle {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+.config-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #34495e;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.form-group input {
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #4364f7;
+  box-shadow: 0 0 0 3px rgba(67, 100, 247, 0.1);
+}
+
+.config-button {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #4364f7, #6fb1fc);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.config-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(67, 100, 247, 0.2);
+}
+
+.config-button:active {
+  transform: translateY(0);
+}
+
+.water-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1.5rem;
+  color: #4364f7;
+}
+
+.config-container {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6fb1fc, #4364f7);
+}
+
+.config-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 4rem;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.config-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.welcome-text {
+  font-size: 2.5rem;
+}
+
+.config-form {
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-group input {
+  padding: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.config-button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1200px) {
+  .config-card {
+    padding: 6rem;
+  }
+
+  .welcome-text {
+    font-size: 3rem;
+  }
+}
